@@ -106,8 +106,8 @@ body {
 	left: 25px;
 }
 
-.weather-icon.feather {
-	height: 60px;
+img {
+	height: 100px;
 	width: auto;
 }
 
@@ -191,12 +191,13 @@ body {
 	text-align: center;
 }
 
-.week-list>li .day-icon {
+.week-list>li img {
 	display: block;
-	height: 30px;
+	height: 50px;
 	width: auto;
 	margin: 0 auto;
 }
+
 
 .week-list>li .day-temp {
 	display: block;

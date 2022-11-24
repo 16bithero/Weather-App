@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import './weather.css';
 import axios from 'axios'
-
+import { useState } from 'react'
 
 
 export default function Weather() {
+    const [city, setCity] = useState('');
     return (
         <>
             <div className="container">
@@ -36,14 +37,13 @@ export default function Weather() {
                             <div className="wind"> <span className="title">UV INDEX</span><span className="value">0 km/h</span>
                                 <div className="clear"></div>
                             </div>
-
                         </div>
                     </div>
                     <div className="week-container">
                         <ul className="week-list">
-                            <li className="day-icon"><i className="day-icon" data-feather="sun"></i><span className="day-name">Monday</span><span className="day-temp">29°C</span></li>
+                            <li className="day-icon"><i className="day-icon"></i><img id="wicon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon"/><span className="day-name">Monday</span><span className="day-temp">29°C</span></li>
                             <li><i className="day-icon" data-feather="cloud"></i><span className="day-name">Tuesday</span><span className="day-temp">21°C</span></li>
-                            <li><i className="day-icon" data-feather="cloud-snow"></i><span className="day-name">Wednesday</span><span className="day-temp">08°C</span></li>
+                            <li><i className="day-icon" data-feather="cloud-snow"></i><img id="wicon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon"/><span className="day-name">Wednesday</span><span className="day-temp">08°C</span></li>
                             <li><i className="day-icon" data-feather="cloud-rain"></i><span className="day-name">Thursday</span><span className="day-temp">19°C</span></li>
                             <li><i className="day-icon" data-feather="cloud-rain"></i><span className="day-name">Friday</span><span className="day-temp">19°C</span></li>
                             <li><i className="day-icon" data-feather="cloud-rain"></i><span className="day-name">Saturday</span><span className="day-temp">19°C</span></li>
