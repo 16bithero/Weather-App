@@ -71,9 +71,9 @@ export default class Forecast extends Component {
         return (
             <>
                 <form className="form__group field">
-                    <input type="text" className="form__field" placeholder="Change City" onChange={(event) => this.readCity(event)}/>
+                    <input type="text" className="form__field" placeholder="Change City" name='search' onChange={(event) => this.readCity(event)}/>
                     <label className="form__label">Change City</label>
-                    <button onClick={this.getCity} className="bttn" type='submit'>Search</button>
+                    <button onClick={this.getCity} className="bttn">Search</button>
                 </form>
                 <br></br>
                 <div className="container">

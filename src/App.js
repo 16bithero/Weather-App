@@ -6,7 +6,7 @@ import Weather from './Weather';
 function App() {
   return (
     <>
-   <Forecast/>
+   <Weather/>
     </>
   );
 }
