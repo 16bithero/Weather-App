@@ -18,7 +18,7 @@ export default class Forecast extends Component {
         this.state = {
             weather: [],
             temp: 0,
-            search: "Toronto",
+            search: "",
             city: "",
             name: "",
             pressure: "",
@@ -37,17 +37,19 @@ export default class Forecast extends Component {
     //     this.getWeatherData()
     // }
 
-    readCity = (event) => {
-        this.setState({...this.state, search: event.target.value})
+    readCity = (e) => {
+        console.log(this.state.search)
+        this.setState({search: e.target.value})
     }
 
+
     getCity = () => {
-        this.getWeatherData(this.state.city)
-        console.log('clocked')
+        this.getWeatherData(this.state.search)
+        console.log(this.getWeatherData())
     }
 
     getWeatherData = (city) => {
-        axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=Toronto&appid=${API_KEY}`)
+        axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}`)
             .then(res => {
                 this.setState({
                     ...this.state,
@@ -71,7 +73,7 @@ export default class Forecast extends Component {
         return (
             <>
                 <form className="form__group field">
-                    <input type="text" className="form__field" placeholder="Change City" name='search' onChange={(event) => this.readCity(event)}/>
+                    <input type="text" className="form__field" placeholder="Change City" name='search' onChange={this.readCity}/>
                     <label className="form__label">Change City</label>
                     <button onClick={this.getCity} className="bttn">Search</button>
                 </form>
