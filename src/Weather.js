@@ -46,7 +46,6 @@ export default function Weather() {
             iconFour: res.data.list[24].weather[0].icon,
             iconFive: res.data.list[32].weather[0].icon,
         })
-
         setCity(res.data.name)
     }
 
