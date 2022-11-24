@@ -31,6 +31,7 @@ export default function Weather() {
             humidity: res.data.list[0].main.humidity,
             wind: res.data.list[0].wind.speed,
             pressure: res.data.list[0].main.pressure,
+            describe: res.data.list[0].weather[0].main,
             maxTemp: res.data.list[0].main.temp_max,
             minTemp: res.data.list[0].main.temp_min,
             tempTwo: res.data.list[8].main.temp,
@@ -42,7 +43,6 @@ export default function Weather() {
             iconThree: res.data.list[16].weather[0].icon,
             iconFour: res.data.list[24].weather[0].icon,
             iconFive: res.data.list[32].weather[0].icon,
-            status: true
         })
 
         setCity(res.data.name)
@@ -53,7 +53,6 @@ export default function Weather() {
             <form className="form__group field" onSubmit={getWeatherData}>
                 <input type="text" className="form__field" placeholder="Change City" name='loc' />
                 <label className="form__label">Change City</label>
-                {/* <button className="bttn" type='submit'>Search</button> */}
             </form>
             <br></br>
             <div className="container">
@@ -65,7 +64,7 @@ export default function Weather() {
                     <div className="weather-container"><i className="weather-icon" data-feather="sun"></i>
 
                         <h1 className="weather-temp">{(weather.temp - 273.15).toFixed(2)}&#8451;</h1>
-                        <h3 className="weather-desc">Sunny</h3>
+                        <h3 className="weather-desc">{weather.describe}</h3>
                     </div>
                 </div>
                 <div className="info-side">

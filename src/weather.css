@@ -19,7 +19,7 @@ body {
 	width: 100%;
 	height: 100vh;
 	font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(to bottom right, #f9c3cc, #9abce9);
+    background-image: linear-gradient(to bottom right, #fbbdd2, #7582cc);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -35,7 +35,7 @@ body {
 	border-radius: 25px;
 	-webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
 	        box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
-	background-color: #617eb4;
+			background-image: linear-gradient(to bottom right, #576ea6, #a2c7dc);
 	color: #ffffff;
 	height: 400px;
 }
@@ -44,7 +44,7 @@ body {
 	position: relative;
 	height: 100%;
 	border-radius: 25px;
-	background-image: url("https://img.freepik.com/free-photo/cherry-blossom-tree_1048-7662.jpg?w=900");
+	background-image: url("https://img.freepik.com/free-photo/cherry-blossom-tree_1048-7662.jpg?w=1000");
 	width: 350px;
 	-webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
 	        box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
@@ -156,7 +156,7 @@ img {
 	-webkit-box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
 	        box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
-	background: #617eb4
+	background-image: linear-gradient(to bottom right, #a2c7dc, #6c84c0);
 }
 
 .week-list>li {
@@ -254,7 +254,7 @@ img {
 	font-family: inherit;
 	width: 100%;
 	border: 0;
-	border-bottom: 2px solid #9b9b9b;
+	border-bottom: 3px solid #576ea6;
 	outline: 0;
 	font-size: 1.3rem;
 	color: #fff;
@@ -276,13 +276,13 @@ img {
 	display: block;
 	transition: 0.2s;
 	font-size: 1rem;
-	color: #9b9b9b;
+	color: #576ea6;
 }
 .form__field:focus {
 	padding-bottom: 6px;
 	font-weight: 700;
 	border-width: 3px;
-	border-image: linear-gradient(to right, #11998e, #38ef7d);
+	border-image: linear-gradient(to right, #576ea6, #a2c7dc);
 	border-image-slice: 1;
 }
 .form__field:focus ~ .form__label {
@@ -291,7 +291,7 @@ img {
 	display: block;
 	transition: 0.2s;
 	font-size: 1rem;
-	color: #11998e;
+	color: #576ea6;
 	font-weight: 700;
 }
 /* reset input */
