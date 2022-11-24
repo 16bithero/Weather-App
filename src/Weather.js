@@ -6,8 +6,16 @@ import { useState } from 'react'
 
 export default function Weather() {
     const [city, setCity] = useState('');
+    const [weather, SetWeather] = useState('');
+
     return (
         <>
+            <div class="form__group field">
+                <input onChange={this.readUserID}type="input" class="form__field" placeholder="Change City" name="name" id='name' required />
+                <label for="name" class="form__label">Change City</label>
+                <button className="bttn">Search</button>
+            </div>
+            <br></br>
             <div className="container">
                 <div className="weather-side">
                     <div className="weather-gradient"></div>
@@ -41,13 +49,13 @@ export default function Weather() {
                     </div>
                     <div className="week-container">
                         <ul className="week-list">
-                            <li className="day-icon"><i className="day-icon"></i><img id="wicon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon"/><span className="day-name">Monday</span><span className="day-temp">29°C</span></li>
-                            <li><i className="day-icon" data-feather="cloud"></i><span className="day-name">Tuesday</span><span className="day-temp">21°C</span></li>
-                            <li><i className="day-icon" data-feather="cloud-snow"></i><img id="wicon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon"/><span className="day-name">Wednesday</span><span className="day-temp">08°C</span></li>
-                            <li><i className="day-icon" data-feather="cloud-rain"></i><span className="day-name">Thursday</span><span className="day-temp">19°C</span></li>
-                            <li><i className="day-icon" data-feather="cloud-rain"></i><span className="day-name">Friday</span><span className="day-temp">19°C</span></li>
-                            <li><i className="day-icon" data-feather="cloud-rain"></i><span className="day-name">Saturday</span><span className="day-temp">19°C</span></li>
-                            <li><i className="day-icon" data-feather="cloud-rain"></i><span className="day-name">Sunday</span><span className="day-temp">19°C</span></li>
+                            <li><img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" /><span className="day-name">Monday</span><span className="day-temp">29°C</span></li>
+                            <li><img src="http://openweathermap.org/img/wn/11d@2x.png" alt="Weather icon" /><span className="day-name">Tuesday</span><span className="day-temp">21°C</span></li>
+                            <li><img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Weather icon" /><span className="day-name">Wednesday</span><span className="day-temp">08°C</span></li>
+                            <li><img src="http://openweathermap.org/img/wn/02d@2x.png" alt="Weather icon" /><span className="day-name">Thursday</span><span className="day-temp">19°C</span></li>
+                            <li><img src="http://openweathermap.org/img/wn/03d@2x.png" alt="Weather icon" /><span className="day-name">Friday</span><span className="day-temp">19°C</span></li>
+                            <li><img src="http://openweathermap.org/img/wn/04d@2x.png" alt="Weather icon" /><span className="day-name">Saturday</span><span className="day-temp">19°C</span></li>
+                            <li><img src="http://openweathermap.org/img/wn/09d@2x.png" alt="Weather icon" /><span className="day-name">Sunday</span><span className="day-temp">19°C</span></li>
                             <div className="clear"></div>
                         </ul>
                     </div>
