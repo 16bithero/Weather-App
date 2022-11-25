@@ -13,3 +13,5 @@
   <img src='https://github.com/16bithero/16bithero/blob/main/api.png'>
 
   * That's it! You can start the project by using `npm start`
+  * Start using the program by typing the city name in the search bar and hit enter
+  <img src='https://github.com/16bithero/16bithero/blob/main/Output5.png'>
